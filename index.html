@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+    body{
+    width: auto;
+    margin: auto;    
+    max-width: 900px;
+    background-color: rgb(0, 0, 0);
+    }    
+    #container-calculator{
+    border: 2px solid rgb(10, 135, 245);
+    border-radius: 4px;
+    width: 200px;
+    height: 85%;
+    margin: 10px;
+    display: flex;
+    box-shadow: inset 4px 5px 17px rgb(149, 148, 148);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#container-calculator{
+   left:340px;
+   position: relative;
+   
+}
+#display{
+ width: 85%;
+ margin: 10px;
+ font-size: 40px;
+}
+.value{
+    width: 50px;
+    margin: 4px;
+    height: 50px;
+    border: none;
+    box-shadow: inset 4px 5px 17px rgb(149, 148, 148),inset -7px 8px 9px rgb(250, 211, 211);
+    font-weight:900;
+    border-radius: 6px
+ 
+}
+.value:hover{
+    background-color: skyblue;
+}
+h1{
+    font-size: 50px;
+    color:white;
+    text-align: center;
+    text-shadow: 7px 8px 9px red;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Calculator</h1>
+    </header>
+    <br>
+    <main>
+       <div id="container-calculator">
+        <input type="text" id="display" readonly>
+
+        <button class="value" onclick="value_display = value_display + '9';
+        document.querySelector('#display').value=value_display;">9</button>
+
+        <button class="value" onclick="value_display = value_display + '8';
+        document.querySelector('#display').value=value_display;">8</button>
+
+        <button class="value" onclick="value_display =  ' ';
+        document.querySelector('#display').value=value_display;">C</button>
+
+        <button class="value" onclick="value_display = value_display + '7';
+        document.querySelector('#display').value=value_display;">7</button>
+
+        <button class="value" onclick="value_display = value_display + '6';
+        document.querySelector('#display').value=value_display;">6</button>
+
+        <button class="value" onclick="value_display = value_display + '+';
+        document.querySelector('#display').value=value_display;">+</button>
+
+        <button class="value" onclick="value_display = value_display + '5';
+        document.querySelector('#display').value=value_display;">5</button>
+
+        <button class="value" onclick="value_display = value_display + '4';
+        document.querySelector('#display').value=value_display;">4</button>
+
+        <button class="value" onclick="value_display = value_display + '-';
+        document.querySelector('#display').value=value_display;">-</button>
+
+        <button class="value" onclick="value_display = value_display + '3';
+        document.querySelector('#display').value=value_display;">3</button>
+
+        <button class="value" onclick="value_display = value_display + '2';
+        document.querySelector('#display').value=value_display;">2</button>
+
+        <button class="value" onclick="value_display = value_display + '*';
+        document.querySelector('#display').value=value_display;">*</button>
+
+        <button class="value" onclick="value_display = value_display + '1';
+        document.querySelector('#display').value=value_display;">1</button>
+
+        <button class="value" onclick="value_display = value_display + '0';
+        document.querySelector('#display').value=value_display;">0</button>
+
+        <button class="value" onclick="value_display = value_display + '/';
+        document.querySelector('#display').value=value_display;">/</button>
+
+        <button class="value" onclick="value_display = value_display + '.';
+        document.querySelector('#display').value=value_display;">.</button>
+
+        <button class="value" onclick="value_display = eval(value_display);
+        document.querySelector('#display').value=value_display;">=</button>
+
+       </div>
+
+    </main>
+    <footer>
+    </footer>
+    <script>
+        let value_display ='';
+        document.querySelector('#display').value=value_display;
+
+
+    </script>
+</body>
+</html>
