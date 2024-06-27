@@ -59,9 +59,9 @@
      /* aspect-ratio: 1; */
  
      & form input[type="button"]{
-       width: 20%;
-       height: 40px;
-       font-size: 15px;
+       width: 10%;
+       height: 30px;
+       font-size: 10px;
        
      }
  
