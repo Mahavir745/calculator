@@ -55,25 +55,25 @@
 
 @media screen and (min-width:340px) {
   .container .calculator{
-     width: 50%;
+     width: 60%;
      /* aspect-ratio: 1; */
  
      & form input[type="button"]{
-       width: 10%;
+       width: 20%;
        height: 30px;
-       font-size: 10px;
+       font-size: 8px;
        
      }
  
      & .display-value{
-       height: 79px;
+       height: 49px;
        border-radius: 8px;
      } 
    }
  }
  @media screen and (min-width:480px) {
   .container .calculator{
-     width: 50%;
+     width: 60%;
      /* aspect-ratio: 1; */
  
      & form input[type="button"]{
@@ -84,7 +84,7 @@
      }
  
      & .display-value{
-       height: 89px;
+       height: 59px;
        border-radius: 8px;
      } 
    }
@@ -101,7 +101,7 @@
      }
  
      & .display-value{
-       height: 89px;
+       height: 59px;
        border-radius: 8px;
      } 
    }

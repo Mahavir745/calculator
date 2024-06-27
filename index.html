@@ -15,9 +15,9 @@
           <input type="text" name="display" disabled class="display-value">
         </div>
         <div>
+          <input type="button" style="background-color :aliceblue;">
           <input type="button" value="AC" onclick="display.value = ''">
           <input type="button" value="DE" onclick="display.value= display.value.toString().slice(0,-1)">
-          <input type="button" value="%" onclick="display.value= percentage(display.value)">
           <input type="button" value="/" onclick="display.value +='/'">
         </div>
         <div>
@@ -49,12 +49,5 @@
     </div>
   </div>
 </body>
-<script>
-  
-  let display=document.querySelector(".display").value
-  function percentage(display){
-    let num= Number(display)
-    return num/100
-  }
-</script>
+
 </html>
