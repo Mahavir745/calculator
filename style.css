@@ -53,7 +53,7 @@
   }
 }
 
-@media screen and (min-width:360px) {
+@media screen and (min-width:340px) {
   .container .calculator{
      width: 50%;
      /* aspect-ratio: 1; */
